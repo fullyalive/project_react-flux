@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
 import Profile from "./github/Profile.jsx";
+import Search from "./github/Search.jsx";
 import $ from "jquery";
 
 class App extends Component {
@@ -11,7 +12,7 @@ class App extends Component {
       username: "fullyalive",
       userData: [],
       userRepos: [],
-      perPage: 5
+      perPage: 10
     };
   }
 
@@ -55,6 +56,13 @@ class App extends Component {
     });
   }
 
+  handleFormSubmit(username) {
+    this.setState({ username: username }, function() {
+      this.getUserData();
+      this.getUserRepos();
+    });
+  }
+
   componentDidMount() {
     this.getUserData();
     this.getUserRepos();
@@ -63,6 +71,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Search onFormSubmit={this.handleFormSubmit.bind(this)} />
         <Profile {...this.state} />
       </div>
     );
