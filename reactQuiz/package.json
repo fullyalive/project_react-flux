@@ -1,12 +1,11 @@
 {
-  "name": "mygithub",
+  "name": "reactquiz",
   "version": "1.0.0",
-  "description": "Get and display user github info",
+  "description": "Simple quiz app in React",
   "main": "index.js",
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "jquery": "^3.4.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
@@ -19,8 +18,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fullyalive",
   "license": "ISC"
