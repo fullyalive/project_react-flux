@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import QuestionList from "./quiz/QuestionList.jsx";
-import Scorebox from "./quiz/Scorebox.jsx";
-import Results from "./quiz/Results.jsx";
+import QuestionList from "./quiz/QuestionList.jsx.js";
+import Scorebox from "./quiz/Scorebox.jsx.js";
+import Results from "./quiz/Results.jsx.js";
 
 class App extends Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Question from "./Question.jsx";
+import Question from "./Question.jsx.js";
 
 class QuestionList extends Component {
   render() {
